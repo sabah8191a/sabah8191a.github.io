@@ -1,0 +1,14 @@
+@mixin font($size, $line) {
+    font-size: $size;
+    line-height: $line;
+}
+@mixin oswald () {
+    font-family: Oswald-Regular;
+}
+@mixin oswald-medium () {
+    font-family: Oswald-Medium;
+}
+@mixin arial() {
+    font-family: ArialRegular;
+}
+  

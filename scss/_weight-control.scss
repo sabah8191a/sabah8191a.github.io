@@ -1,0 +1,52 @@
+.weight-control {
+  width: 100%;
+}
+.weight-control__wrapper {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.weight-control__lose-weight {
+  @include font(24px, 37px);
+  @include oswald;
+}
+.weight-control__lose-weight-text {
+  @include font(14px, 18px);
+  @include arial();
+}
+.weight-control__gain-lose {
+  background-color: $grey-color;
+  padding: 20px;
+}
+.weight-control__lose-image-background {
+  position: relative;
+  background-color: $green-color;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.weight-control__lose-image {
+  position: absolute;
+  left: 10px;
+  bottom: 3px;
+}
+.weight-control__gain-image-background {
+  position: relative;
+  background-color: $green-color;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.weight-control__gain-image {
+  position: absolute;
+  left: -7px;
+  bottom: 10px;
+}
+.catalog-toggle {
+  @include font(16px, 16px);
+  @include oswald;
+}
+
+@media (min-width: $tablet-width) {
+
+}

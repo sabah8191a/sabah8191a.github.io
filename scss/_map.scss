@@ -1,0 +1,14 @@
+.map {
+  width: 100%;
+}
+.map__text-window {
+    display: flex;
+}
+.map__text-window__left {
+    @include font(16px, 20px);
+    @include oswald();
+}
+.map__text-window__right {
+    @include font(14px, 20px);
+    @include arial();
+}
