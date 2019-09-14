@@ -4,6 +4,22 @@
 .map__text-window {
     display: flex;
 }
+.map__map-mobile {
+    position: relative;
+    z-index: 0;
+}
+.map__map-pin {
+    position: absolute;
+    left: 135px;
+    bottom: 172px;
+    z-index: 1;
+}
+.map__map-tablet {
+    display: none;
+}
+.map__map-desktop {
+    display: none;
+}
 .map__text-window__left {
     @include font(16px, 20px);
     @include oswald();
@@ -11,4 +27,22 @@
 .map__text-window__right {
     @include font(14px, 20px);
     @include arial();
+}
+
+@media (min-width: $tablet-width) {
+    .map__map-mobile {
+        display: none;
+    }
+    .map__map-desktop {
+        display: none;
+    }
+    .map__map-tablet {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+    }
+    .map__map-pin-tablet {
+        position: absolute;
+        bottom: 150px;
+    }
 }

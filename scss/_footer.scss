@@ -3,5 +3,33 @@
     background-color: $grey-color;
 }
 .page-footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.page-footer__logo-wrapper {
+    margin-top: 35px;
+}
+.page-footer__line-1 {
+    margin-top: 30px;
     width: 280px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.page-footer__line-2 {
+    margin-top: 20px;
+    width: 280px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.page-footer__social {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    margin-top: 20px;
+}
+.page-footer__html-academy {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    margin-top: 20px;
 }

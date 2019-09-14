@@ -37,7 +37,7 @@
                             <a href="">Главная</a>
                         </li>
                         <li class="site-list__item">
-                            <a href="http://gnatkovsky.com.ua/plavno-otkryvayushheesya-menyu-s-pomoshhyu-css.html">Каталог продукции</a>
+                            <a href="#">Каталог продукции</a>
                         </li>
                         <li class="site-list__item">
                             <a href="">Подбор программы</a>
@@ -50,10 +50,12 @@
     <main class="main-mobile">
         <div class="main-mobile__wrapper">
             <h1 class="main-mobile__h1">Функциональное<br> питание для котов</h1>
-            <h3>Занялся собой? Займись котом!</h3>
+            <h3 class="main-mobile__h3">Занялся собой? Займись котом!</h3>
             <img class="main-mobile__index-can-mobile" src="img/index-can-mobile.png" alt="">
             <img class="main-tablet__index-can-tablet" src="img/index-can-tablet.jpg">
-            <button type="button" class="main-nav__toggle">Подобрать программу</button>
+            <a  href="#" class="main-nav__toggle">
+                <span>Подобрать программу</span>
+            </a>
         </div>    
         </main>
     <section class="weight-control">
@@ -62,17 +64,21 @@
                 <div class="weight-control__lose-image-background">
                     <img class="weight-control__lose-image" src="img/lose-weight.svg"  alt="lose-weight">
                 </div>
-                <h2 class="weight-control__lose-weight">Похудение</h2>
-                <p class="weight-control__lose-weight-text">Ваш кот весит больше собаки и<br> почти утратил способность лазить<br> по деревьям? Пора на диету! Cat<br> Energy Slim поможет вашему<br> питомцу сбросить лишний вес.</p>
-                <p><a href="" class="weight-control__catalog-slim catalog-toggle">Каталог Slim</a></p>
+                <div class="weight-control__text-wrapper">
+                    <h2 class="weight-control__lose-weight">Похудение</h2>
+                    <p class="weight-control__lose-weight-text">Ваш кот весит больше собаки и<br> почти утратил способность лазить<br> по деревьям? Пора на диету! Cat<br> Energy Slim поможет вашему<br> питомцу сбросить лишний вес.</p>
+                    <p><a href="" class="weight-control__catalog-slim catalog-toggle">Каталог Slim <img src="img/right-arrow-long.svg" alt=""></a></p>
+                </div>   
             </div>
             <div class="weight-control__gain-lose">
                 <div class="weight-control__gain-image-background">
                     <img class="weight-control__gain-image" src="img/gain-weight.svg"  alt="gain-weight">
                 </div>
-                <h2 class="weight-control__gain-weight">Набор массы</h2>
-                <p class="weight-control__gain-weight-text">Заработать авторитет среди<br> дворовых котов и даже собак?<br> Серия Cat Energy Pro поможет<br> вашему коту нарастить<br> необходимые мышцы!</p>
-                <p><a href="" class="weight-control__catalog-pro catalog-toggle">Каталог Pro</a></p>
+                <div class="weight-control__text-wrapper">
+                    <h2 class="weight-control__gain-weight">Набор массы</h2>
+                    <p class="weight-control__gain-weight-text">Заработать авторитет среди<br> дворовых котов и даже собак?<br> Серия Cat Energy Pro поможет<br> вашему коту нарастить<br> необходимые мышцы!</p>
+                    <p><a href="" class="weight-control__catalog-pro catalog-toggle">Каталог Pro <img src="img/right-arrow-long.svg" alt=""></a></p>
+                </div>  
             </div>
         </div>
     </section>
@@ -150,8 +156,18 @@
             <span class="map__text-window__left">Приглашаем <br>к сотрудничеству <br>дилеров!</span>
             <span class="map__text-window__right">ул. Большая <br>Конюшенная, д. 19/8 <p>Санкт-Петербург</p></span>
         </div>
-        <img src="img/map.png" alt="">
-        <img src="img/map-pin.png 50%.png" alt="">
+        <div class="map__map-mobile">        
+            <img src="img/map-mobile.png" alt="">
+            <img class="map__map-pin" src="img/map-pin-mobile.png" alt="">
+        </div>
+        <div class="map__map-tablet">
+            <img src="img/map-tablet.png" alt="">
+            <img class="map__map-pin-tablet" src="img/map-pin.png" alt="">
+        </div>
+        <div class="map__map-desktop">
+            <img src="img/map-desktop.png" alt="">
+            <img class="map__map-pin-desktop" src="img/map-pin.png" alt="">
+        </div>
    </section>
    <footer class="page-footer">
         <div class="page-footer__wrapper">
@@ -160,10 +176,20 @@
                     <img src="img/footer-logo.svg" class="page-footer__logo-image" alt="">
                 </a>
             </div>
+            <div class="page-footer__line-1">
+            </div>
             <div class="page-footer__social">
-                <img src="img/m-vk.svg" class="page-footer__social-item" alt="vk">
-                <img src="img/m-insta.svg" class="page-footer__social-item" alt="inst">
-                <img src="img/m-fb.svg" class="page-footer__social-item" alt="fb">
+                <a href="#">
+                    <img src="img/m-vk.svg" class="page-footer__social-item" alt="vk">
+                </a>
+                <a href="">
+                    <img src="img/m-insta.svg" class="page-footer__social-item" alt="inst">
+                </a>
+                <a href="">
+                    <img src="img/m-fb.svg" class="page-footer__social-item" alt="fb">
+                </a>
+            </div>
+            <div class="page-footer__line-2">
             </div>
             <div class="page-footer__html-academy">
                 <span class="page-footer__html-academy__text">HTML Academy</span>
