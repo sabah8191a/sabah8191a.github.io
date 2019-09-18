@@ -16,7 +16,7 @@
     }
     .page-header__menu-button:active,
     .page-header__menu-button:focus + .page-header__list {
-        display: block;
+        display: none;
     }
 }
 .page-header__list {

@@ -55,3 +55,9 @@
         @include oswald();
     }
 }
+@media (min-width: $tablet-width) { 
+    .living-example {
+        margin-top: 40px;
+        background-color: transparent;
+    }
+}
