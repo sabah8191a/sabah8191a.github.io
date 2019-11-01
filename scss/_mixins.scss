@@ -3,12 +3,15 @@
     line-height: $line;
 }
 @mixin oswald () {
-    font-family: Oswald-Regular;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
 }
 @mixin oswald-medium () {
-    font-family: Oswald-Medium;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
 }
 @mixin arial() {
-    font-family: ArialRegular;
+    font-family: Arial, "Regular", sans-serif;
+    font-weight: 400;
 }
   

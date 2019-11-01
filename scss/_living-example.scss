@@ -19,14 +19,22 @@
     width: 195px;
     text-transform: uppercase;
 }
+.living-example__slider {
+    position: relative;
+}
 .living-example__slider-1 {
     position: relative;
 }
 .living-example__slider-2 {
     position: absolute;
-    left: 50px;;
+    left: 63px;
 }
-
+.living-example__slider-1__desktop {
+    display: none;
+}
+.living-example__slider-2__desktop {
+    display: none;
+}
 .living-example__h1 {
     @include font(36px, 60px);
     @include oswald();
@@ -59,5 +67,28 @@
     .living-example {
         margin-top: 40px;
         background-color: transparent;
+    }
+    .living-example__slider-1 {
+        display: none;
+    }
+    .living-example__slider-2 {
+        display: none;
+    }
+    .living-example__slider-1__desktop {
+        position: relative;
+        display: block;
+    }
+    .living-example__slider-2__desktop {
+        position: absolute;
+        top: 10px;
+        right: 60px;
+        display: block;
+    }
+    .input-range__wrapper {
+        margin: 0 auto;
+        width: 580px;
+    }
+    .input-range {
+        margin: 0 auto;
     }
 }

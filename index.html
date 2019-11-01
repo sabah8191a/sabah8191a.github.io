@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="refresh" content=""/>
+    <meta http-equiv="refresh" content="3"/>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css"> 
     <title>Document</title>
@@ -63,6 +64,8 @@
             <div class="weight-control__gain-lose">
                 <div class="weight-control__lose-image-background">
                     <img class="weight-control__lose-image" src="img/lose-weight.svg"  alt="lose-weight">
+                    <img class="weight-control__lose-image__tablet" src="img/cat-slim2x.svg"  alt="lose-weight">
+                    <img class="weight-control__lose-image__desktop" src="img/cat-slim.svg"  alt="lose-weight">
                 </div>
                 <div class="weight-control__text-wrapper">
                     <h2 class="weight-control__lose-weight">Похудение</h2>
@@ -73,6 +76,8 @@
             <div class="weight-control__gain-lose">
                 <div class="weight-control__gain-image-background">
                     <img class="weight-control__gain-image" src="img/gain-weight.svg"  alt="gain-weight">
+                    <img class="weight-control__gain-image__tablet" src="img/cat-pro2x.svg"  alt="gain-weight">
+                    <img class="weight-control__gain-image__desktop" src="img/cat-pro.svg"  alt="gain-weight">
                 </div>
                 <div class="weight-control__text-wrapper">
                     <h2 class="weight-control__gain-weight">Набор массы</h2>
@@ -156,10 +161,16 @@
             <div class="living-example__slider">
                 <img src="img/before-mobile.png" class="living-example__slider-1" alt="pic1">
                 <img src="img/after-mobile.png" class="living-example__slider-2" alt="pic2">
+                <img src="img/before-desktop.png" class="living-example__slider-1__desktop" alt="pic1">
+                <img src="img/after-desktop.png" class="living-example__slider-2__desktop" alt="pic2">
             </div>
-            <span>Было</span>
-            <input type="range">
-            <span>Стало</span>
+            <div class="input-range__wrapper">
+                <div class="input-range">
+                    <span>Было</span>
+                    <input type="range">
+                    <span>Стало</span>
+                </div>
+            </div>
         </div>
    </section>
    <section class="map">
