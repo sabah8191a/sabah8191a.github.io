@@ -1,8 +1,14 @@
 .weight-control {
-  width: 100%;
+  width: 90%;
+  margin-top: 200px;
+  picture {
+    position: absolute;
+    bottom: 5px;
+    right: 12px;
+  }
 }
 .weight-control__wrapper {
-  width: 280px;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -28,6 +34,11 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  picture {
+    position: absolute;
+    bottom: 5px;
+    right: 12px;
+  }
 }
 .weight-control__lose-image {
   position: absolute;
@@ -40,6 +51,11 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  picture {
+    position: absolute;
+    bottom: 5px;
+    right: -10px;
+  }
 }
 .weight-control__gain-image {
   position: absolute;
@@ -53,33 +69,16 @@
     margin-left: 10px;
   }
 }
-.weight-control__lose-image__tablet {
-  display: none;
-}
-.weight-control__lose-image__desktop {
-  display: none;
-}
-.weight-control__gain-image__tablet {
-  display: none;
-}
-.weight-control__gain-image__desktop {
-  display: none;
-}
+
 @media (min-width: $tablet-width) {
   .weight-control__wrapper {
-    width: 708px;
+    width: 90%;
   }
   .weight-control__gain-lose {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     margin-bottom: 30px;
-  }
-  .weight-control__lose-image {
-    display: none;
-  }
-  .weight-control__gain-image {
-    display: none;
   }
   .weight-control__gain-image__tablet {
     display: block;
@@ -97,11 +96,21 @@
     position: relative;
     width:200px;
     height: 200px;
+    picture {
+      position: absolute;
+      bottom: 10px;
+      left: 35px;
+    }
   }
   .weight-control__gain-image-background {
     position: relative;
     width:200px;
     height: 200px;
+    picture {
+      position: absolute;
+      bottom: 30px;
+      left: -40px;
+    }
   }
   .weight-control__lose-weight,
   .weight-control__gain-weight {
@@ -118,6 +127,31 @@
     @include oswald;
     img {
       margin-left: 15px;
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .weight-control {
+    width: 90%;
+  }
+  .weight-control__lose-image-background {
+    position: relative;
+    width:100px;
+    height: 100px;
+    picture {
+      position: absolute;
+      bottom: 5px;
+      left: 10px;
+    }
+  }
+  .weight-control__gain-image-background {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    picture {
+      position: absolute;
+      bottom: 20px;
+      left: -18px;
     }
   }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="refresh" content="3"/>
+    <meta http-equiv="refresh" content=""/>
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css"> 
@@ -13,20 +13,12 @@
 <body>
     <header class="page-header">
         <div class="page-header__wrapper">
-            <div class="logo-1">
-                <a href="#" class="page-header__logo">
-                    <img src="img/logo-mobile.svg" class="page-header__logo-image" alt="logo">
-                </a>
-            </div>
-            <div class="logo-2">
-                <a href="#" class="page-header__logo">
-                    <img src="img/logo-mobile-header.svg" class="page-header__logo-image" alt="logo">
-                </a>
-            </div>
-            <div class="logo-tablet">
-                <a href="#" class="page-header__tablet-logo">
-                    <img src="img/logo-tablet.svg" alt="">
-                </a>
+            <div class="logo">
+                <picture>
+                    <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                    <img src="img/logo-mobile.svg" alt="">
+                </picture>
             </div>
             <div class="page-header__mobile-toggle">
                 <nav class="page-header__mobile-nav">
@@ -49,23 +41,36 @@
         </div>
     </header>
     <main class="main-mobile">
-        <div class="main-mobile__wrapper">
-            <h1 class="main-mobile__h1">Функциональное<br> питание для котов</h1>
-            <h3 class="main-mobile__h3">Занялся собой? Займись котом!</h3>
-            <img class="main-mobile__index-can-mobile" src="img/index-can-mobile.png" alt="">
-            <img class="main-tablet__index-can-tablet" src="img/index-can-tablet.jpg">
-            <a  href="#" class="main-nav__toggle">
-                <span>Подобрать программу</span>
-            </a>
-        </div>    
-        </main>
+        <div class="main-wrapper__for-desktop">
+            <div class="main-mobile__wrapper">
+                <h1 class="main-mobile__h1">Функциональное<br> питание для котов</h1>
+                <h3 class="main-mobile__h3">Занялся собой? Займись котом!</h3>
+                <div class="main-glass__wrapper">
+                    <picture>
+                        <source media="(min-width: 1440px)" srcset="img/index-can.png">
+                        <source media="(min-width: 768px)" srcset="img/index-can-tablet.jpg" class="main-tablet__index-can-tablet">
+                        <img src="img/index-can-mobile.png" alt="">
+                    </picture>
+
+                    <a href="#" class="main-nav__toggle">
+                        <span>Подобрать программу</span>
+                    </a>
+                    </div>
+            </div>   
+            <div class="main-mobile__desktop-bg">
+                <img src="img/index-background-desktop.jpg" alt="">
+            </div> 
+        </div>
+    </main>
     <section class="weight-control">
         <div class="weight-control__wrapper">
             <div class="weight-control__gain-lose">
                 <div class="weight-control__lose-image-background">
-                    <img class="weight-control__lose-image" src="img/lose-weight.svg"  alt="lose-weight">
-                    <img class="weight-control__lose-image__tablet" src="img/cat-slim2x.svg"  alt="lose-weight">
-                    <img class="weight-control__lose-image__desktop" src="img/cat-slim.svg"  alt="lose-weight">
+                    <picture>
+                        <source media="(min-width: 1440px)" srcset="img/cat-slim.svg">
+                        <source media="(min-width: 768px)" srcset="img/cat-slim2x.svg" class="main-tablet__index-can-tablet">
+                        <img src="img/lose-weight.svg" alt="">
+                    </picture>                          
                 </div>
                 <div class="weight-control__text-wrapper">
                     <h2 class="weight-control__lose-weight">Похудение</h2>
@@ -75,9 +80,12 @@
             </div>
             <div class="weight-control__gain-lose">
                 <div class="weight-control__gain-image-background">
-                    <img class="weight-control__gain-image" src="img/gain-weight.svg"  alt="gain-weight">
-                    <img class="weight-control__gain-image__tablet" src="img/cat-pro2x.svg"  alt="gain-weight">
-                    <img class="weight-control__gain-image__desktop" src="img/cat-pro.svg"  alt="gain-weight">
+                    <picture>
+                        <source media="(min-width: 1440px)" srcset="img/cat-pro.svg">
+                        <source media="(min-width: 768px)" srcset="img/cat-pro2x.svg" class="main-tablet__index-can-tablet">
+                        <img src="img/gain-weight.svg" alt="">
+                    </picture>   
+                    
                 </div>
                 <div class="weight-control__text-wrapper">
                     <h2 class="weight-control__gain-weight">Набор массы</h2>
@@ -127,7 +135,7 @@
                 <li class="how-it-works__item">
                     <div class="how-it-works__item-wrapper">
                         <div class="how-it-works__item-img-bg">
-                            <img class="how-it-works__img" src="img/clock.svg"alt="">
+                            <img class="how-it-works__img" src="img/clock.svg" alt="">
                         </div>
                         <span class="how-it-works__item-text">Уже через месяц<br> наслаждайтесь изменениями<br> к лучшему вашего питомца!</span>
                     </div>
